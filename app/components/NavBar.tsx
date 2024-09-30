@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <nav className="bg-background p-4 text-gray-600 shadow-md w-full">
+    <nav className="bg-background p-4 text-gray-600 shadow-sm w-full">
       <div className="flex justify-between items-center mx-auto max-w-7xl">
         <div className="flex justify-center items-center">
           <div className="text-accent font-bold text-center text-xl">

@@ -11,9 +11,13 @@ const config: Config = {
       colors: {
         primary: "#001f3c",
         secondary: "#2d698e",
-        accent: "#c26404",
         background: "#fffcf7",
+        accent: "#c26404",
         lightaccent: "#e87a01",
+      },
+      backgroundImage: {
+        gradient_background:
+          "linear-gradient(to right, #fffcf7, #f9efdf, #fffcf7)",
       },
     },
   },
