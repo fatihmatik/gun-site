@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
-    <nav className="bg-background p-4 text-gray-600 shadow-md px-32">
-      <div className="flex justify-between items-center">
+    <nav className="bg-background p-4 text-gray-600 shadow-md w-full">
+      <div className="flex justify-between items-center mx-auto max-w-7xl">
         <div className="flex justify-center items-center">
           <div className="text-accent font-bold text-center text-xl">
             <h1>Oversea Education & Consulting</h1>
