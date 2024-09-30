@@ -3,7 +3,7 @@ import React from "react";
 const HomeHero = () => {
   return (
     <div className="py-12">
-      <div className="container mx-auto flex items-center justify-between px-6 lg:px-16">
+      <div className="container flex  items-center justify-between ">
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2 space-y-4">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
