@@ -1,17 +1,8 @@
-import Image from "next/image";
-
 export default function NavBar() {
   return (
     <nav className="bg-background p-4 text-gray-600 shadow-md px-32">
       <div className="flex justify-between items-center">
         <div className="flex justify-center items-center">
-          {/* <Image
-            width="128"
-            height="128"
-            src="/images/oversealogoonly.png"
-            alt="Logo"
-            className="rounded-3xl"
-          /> */}
           <div className="text-accent font-bold text-center text-xl">
             <h1>Oversea Education & Consulting</h1>
           </div>

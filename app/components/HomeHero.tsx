@@ -7,7 +7,7 @@ const HomeHero = () => {
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2 space-y-4">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
-            Avrupa'ya gidin<span className="text-accent"> Hemen</span>
+            Avrupa'ya <span className="text-accent "> Hemen</span> Ulaşın!
           </h1>
           <p className="text-lg text-gray-600">
             İtalya'da Üniversiteler için Lisans ve Yükseklisans okul başvuruları
@@ -28,7 +28,7 @@ const HomeHero = () => {
                 İşte yurtdışı fırsatınız
               </h4>
               <p className="text-gray-500">
-                Tecrübe kazanmak isteyen bir öğrencisyseniz.
+                Tecrübe kazanmak isteyen bir öğrenciyseniz.
               </p>
             </div>
             <div className="bg-white shadow-lg p-4 rounded-lg">
@@ -42,7 +42,7 @@ const HomeHero = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block w-full lg:w-1/2">
+        <div className="hidden lg:block w-full lg:w-1/2 ml-8 ">
           <img
             src="/images/oversealogowithtext.png"
             alt="Student holding books"
