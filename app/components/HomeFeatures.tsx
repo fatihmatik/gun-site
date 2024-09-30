@@ -29,7 +29,7 @@ const HomeFeatures: React.FC = () => {
             <div className="bg-gray-300 h-[1px] w-2/3 my-2 "></div>
             <p className="text-gray-600">
               Aylık
-              <span className="text-accent"> 530-1100€ </span>
+              <span className="text-accent font-bold"> 530-1100€ </span>
               Destek
             </p>
 

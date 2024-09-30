@@ -5,7 +5,7 @@ const HomeHero = () => {
     <div className="py-12">
       <div className="container flex  items-center justify-between ">
         {/* Left Section - Text Content */}
-        <div className="w-full lg:w-1/2 space-y-4">
+        <div className="w-full lg:w-1/2 space-y-4 ">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
             Avrupa'ya <span className="text-accent "> Hemen</span> Ulaşın!
           </h1>
@@ -13,7 +13,7 @@ const HomeHero = () => {
             İtalya'da Üniversiteler için Lisans ve Yükseklisans okul başvuruları
           </p>
 
-          <div className="mt-6">
+          <div className="py-3">
             <a
               href="/get-started"
               className="bg-accent hover:bg-accent-dark text-white py-3 px-8 rounded-lg font-medium"
