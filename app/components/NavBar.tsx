@@ -13,7 +13,7 @@ export default function NavBar() {
       {/* Desktop Navigation */}
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl">
         <div className="flex justify-center items-center">
-          <div className="text-accent font-bold text-center text-xl">
+          <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
             <h1>Oversea Education & Consulting</h1>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function NavBar() {
       {/* Mobile Navbar */}
       <div className="md:hidden flex justify-between items-center">
         {/* Mobile Logo */}
-        <div className="text-accent font-bold text-xl">
+        <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
           <h1>Oversea Eğitim & Danışmanlık</h1>
         </div>
 

@@ -1,14 +1,11 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 
 const HomeFeatures: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <section className="py-12">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl lg:text-4xl font-bold text-primary">
             Avrupa'ya Gitmenin
             <span className="text-accent"> En Kolay </span>
             Yolu
@@ -18,26 +15,22 @@ const HomeFeatures: React.FC = () => {
         {/* Three Feature Columns */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Column 1 */}
-          <div
-            className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <h3 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1 transition-all duration-300 md:hover:-translate-y-8">
+            <h3 className="text-xl lg:text-2xl font-semibold text-primary mb-4">
               Servislerimiz
             </h3>
-            <div className="bg-gray-300 h-[1px] w-2/3 my-2 "></div>
-            <p className="text-gray-600">
+            <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
+            <p className="text-primary">
               Aylık
               <span className="text-accent font-bold"> 530-1100€ </span>
               Destek
             </p>
 
-            <p className="text-gray-600"> 1-6 ay süre </p>
+            <p className="text-primary"> 1-6 ay süre </p>
           </div>
 
           {/* Column 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-8 flex-1 flex flex-col items-center text-center">
+          <div className="bg-white shadow-lg rounded-lg p-8 flex-1 flex flex-col items-center text-center transition-all duration-300 md:hover:-translate-y-10">
             <div className="bg-accent rounded-full p-4 mb-6">
               <svg
                 width="32px"
@@ -55,15 +48,15 @@ const HomeFeatures: React.FC = () => {
                 </g>
               </svg>
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-xl lg:text-2xl font-semibold text-primary mb-4">
               OVERSEA EĞİTİM VE DANIŞMANLIK
             </h3>
-            <div className="bg-gray-300 h-[1px] w-2/3 my-2 "></div>
-            <p className="text-gray-600">@oversea.education</p>
+            <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
+            <p className="text-primary">@oversea.education</p>
           </div>
 
           {/* Column 3 */}
-          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1">
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1 transition-all duration-300 md:hover:-translate-y-8">
             {/* <div className="bg-accent rounded-full p-4 mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,15 +73,15 @@ const HomeFeatures: React.FC = () => {
                 />
               </svg>
             </div> */}
-            <h3 className="text-lg lg:text-xl font-semibold text-gray-600 mb-4">
+            <h3 className="text-lg lg:text-xl font-semibold text-primary mb-4">
               Başvuru Ücreti
             </h3>
             <h2 className="text-3xl lg:text-4xl font-semibold text-accent mb-4">
               200€
             </h2>
-            <div className="bg-gray-300 h-[1px] w-2/3 my-2 "></div>
+            <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
 
-            <p className="text-gray-600">Hemen Başvur!</p>
+            <p className="text-primary">Hemen Başvur!</p>
           </div>
         </div>
       </div>
