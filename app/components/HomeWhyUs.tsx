@@ -26,7 +26,7 @@ const HomeWhyUs = () => {
               <span className="text-primary font-extrabold text-5xl">
                 300+{" "}
               </span>
-              fazla müşterimiz
+              müşterimiz
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 "></div>
           </div>
@@ -36,7 +36,7 @@ const HomeWhyUs = () => {
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[50%] bg-cover bg-center"></div>
             <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[25%] text-center self-center">
               İtalya'da
-              <span className="text-primary font-extrabold text-5xl">12</span>
+              <span className="text-primary font-extrabold text-5xl">12 </span>
               şehir
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl h-[80%] w-0 lg:w-[20%] self-end bg-cover bg-center"></div>
