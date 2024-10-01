@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import SmoothCollapse from "react-smooth-collapse";
 
@@ -14,7 +15,9 @@ export default function NavBar() {
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl">
         <div className="flex justify-center items-center">
           <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
-            <h1>Oversea Education & Consulting</h1>
+            <Link href="/">
+              <h1>Oversea Education & Consulting</h1>
+            </Link>
           </div>
         </div>
 
@@ -47,7 +50,9 @@ export default function NavBar() {
       <div className="md:hidden flex justify-between items-center">
         {/* Mobile Logo */}
         <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
-          <h1>Oversea Eğitim & Danışmanlık</h1>
+          <Link href="/">
+            <h1>Oversea Eğitim & Danışmanlık</h1>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon */}
