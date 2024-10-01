@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp ";
 
 export const metadata: Metadata = {
   title: "Oversea Education",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-gradient_background">
         <NavBar />
         <div className="px-4 md:px-32">{children}</div>
+        <FloatingWhatsApp />
         <Footer />
       </body>
     </html>
