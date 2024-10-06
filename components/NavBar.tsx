@@ -23,33 +23,51 @@ export default function NavBar() {
                 <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
                   Oversea Education & Consulting
                 </span>
+                <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+                <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               </h1>
             </Link>
           </div>
         </div>
 
-        <ul className="flex space-x-16 font-semibold text-base">
+        <ul className="flex space-x-16 font-extralight text-base">
           <li>
-            <a href="/about">Biz Kimiz</a>
+            <Link href="/about" className="relative group inline-block">
+              Biz Kimiz
+              <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+              <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+            </Link>
           </li>
           <li>
-            <a href="/services">Servislerimiz</a>
+            <Link href="/services" className="relative group inline-block">
+              Servislerimiz
+              <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+              <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+            </Link>
           </li>
           <li>
-            <a href="/stories">Başarı Hikayeleri</a>
+            <Link href="/stories" className="relative group inline-block">
+              Başarı Hikayeleri
+              <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+              <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+            </Link>
           </li>
           <li>
-            <a href="/contact">İletişim</a>
+            <Link href="/contact" className="relative group inline-block">
+              İletişim
+              <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+              <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+            </Link>
           </li>
         </ul>
 
         <div>
-          <a
-            href="/appointment"
+          <Link
+            href="/contact"
             className="border-2 border-lightaccent text-lightaccent py-2 px-4 rounded-lg hover:bg-lightaccent hover:text-white transition-colors"
           >
             Randevu Alın
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -112,24 +130,24 @@ export default function NavBar() {
       <SmoothCollapse expanded={isOpen} heightTransition="300ms">
         <ul className="flex flex-col space-y-4 my-4 font-semibold text-base md:hidden text-right ">
           <li className="hover:text-gray-800">
-            <a href="/about">Biz Kimiz</a>
+            <Link href="/about">Biz Kimiz</Link>
           </li>
           <li className="hover:text-gray-800">
-            <a href="/services">Servislerimiz</a>
+            <Link href="/services">Servislerimiz</Link>
           </li>
           <li className="hover:text-gray-800">
-            <a href="/stories">Başarı Hikayeleri</a>
+            <Link href="/stories">Başarı Hikayeleri</Link>
           </li>
           <li className="hover:text-gray-800">
-            <a href="/contact">İletişim</a>
+            <Link href="/contact">İletişim</Link>
           </li>
           <li>
-            <a
-              href="/appointment"
+            <Link
+              href="/contact"
               className="border-2 border-lightaccent text-lightaccent py-2 px-4 rounded-lg hover:bg-lightaccent hover:text-white transition-colors"
             >
               Randevu Alın
-            </a>
+            </Link>
           </li>
         </ul>
       </SmoothCollapse>
