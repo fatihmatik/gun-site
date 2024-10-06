@@ -5,11 +5,24 @@ import Footer from "../components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "Oversea Education",
+  title: "Oversea Education | overseaeducation.com",
   description: "Oversea Education Avrupa'da Eğitim için sizlerle beraber.",
   icons: {
-    icon: "/favicon.png", // Path to your favicon
+    icon: "/favicon.png",
   },
+  keywords: [
+    "Avrupa Egitim",
+    "Avrupa Staj",
+    "Avrupa Calisma",
+    "Avrupa Universiteler",
+    "İtalya Staj",
+    "İtalya Lisans",
+    "İtalya Yüksek Lisans",
+    "Yurtdisinda is staj",
+    "Yurtdisinda okuma calisma",
+    "oversea education",
+    "avrupa staj danismanlik",
+  ],
 };
 
 export default function RootLayout({
