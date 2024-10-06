@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="tr">
       <body className="flex flex-col min-h-screen bg-gradient_background">
         <NavBar />
-        <div className="px-4 md:px-32">{children}</div>
+        <div className="px-4 md:px-32 mt-16">{children}</div>
         <FloatingWhatsApp />
         <Footer />
       </body>

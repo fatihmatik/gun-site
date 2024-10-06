@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         primary: "#001f3c",
         secondary: "#2d698e",
+        // filter for secondary color
+        // style={{filter:"invert(27%) sepia(18%) saturate(2272%) hue-rotate(167deg) brightness(89%) contrast(101%)",}}
         background: "#fffcf7",
         accent: "#c26404",
         lightaccent: "#e87a01",

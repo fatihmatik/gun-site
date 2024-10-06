@@ -10,13 +10,20 @@ export default function NavBar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-background p-4 text-gray-600 shadow-sm w-full">
+    <nav className="bg-background p-4 text-gray-600 shadow-sm w-full fixed z-50 top-0 left-0">
       {/* Desktop Navigation */}
-      <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl">
+      <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl ">
         <div className="flex justify-center items-center">
-          <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+          <div className="">
             <Link href="/">
-              <h1>Oversea Education & Consulting</h1>
+              <h1 className="relative group inline-block">
+                <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+                  Oversea Education & Consulting
+                </span>
+                <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
+                  Oversea Education & Consulting
+                </span>
+              </h1>
             </Link>
           </div>
         </div>
@@ -51,7 +58,14 @@ export default function NavBar() {
         {/* Mobile Logo */}
         <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
           <Link href="/">
-            <h1>Oversea Eğitim & Danışmanlık</h1>
+            <h1 className="relative group inline-block">
+              <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+                Oversea Education & Consulting
+              </span>
+              <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
+                Oversea Education & Consulting
+              </span>
+            </h1>
           </Link>
         </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactPage = () => {
@@ -82,23 +83,58 @@ const ContactPage = () => {
           <p className="text-secondary">
             Follow us on social media for updates:
           </p>
-          <div className="flex mt-4">
-            <a
-              href="https://www.facebook.com"
+          <div className="flex mt-4 gap-4 items-center">
+            <Link
+              href={"https://www.facebook.com"}
+              className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary mr-4 hover:underline"
             >
-              Facebook
-            </a>
-            <a
-              href="https://www.instagram.com"
+              <img
+                src="/svgs/facebook-icon.svg"
+                alt="facebook-icon"
+                width={27}
+                height={27}
+                style={{
+                  filter:
+                    "invert(27%) sepia(18%) saturate(2272%) hue-rotate(167deg) brightness(89%) contrast(101%)",
+                }}
+              />
+            </Link>
+            <Link
+              href={"https://www.instagram.com"}
+              className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline"
             >
-              Instagram
-            </a>
+              <img
+                src="/svgs/instagram-icon.svg"
+                alt="facebook-icon"
+                width={28}
+                height={28}
+                style={{
+                  filter:
+                    "invert(27%) sepia(18%) saturate(2272%) hue-rotate(167deg) brightness(89%) contrast(101%)",
+                }}
+              />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com"}
+              className="transition-transform duration-300 hover:scale-125"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/svgs/linkedin-icon.svg"
+                alt="facebook-icon"
+                width={42}
+                height={42}
+                style={{
+                  filter:
+                    "invert(27%) sepia(18%) saturate(2272%) hue-rotate(167deg) brightness(89%) contrast(101%)",
+                }}
+              />
+            </Link>
           </div>
         </div>
       </div>

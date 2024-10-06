@@ -7,10 +7,12 @@ const page = () => {
 
       <p className="mb-4">
         At Oversea, we are dedicated to helping you realize your career goals
-        abroad through <span className="text-accent"> undergraduate </span> and{" "}
-        <span className="text-accent"> master's </span> education in Italy. Our
-        team of expert consultants is here to support you with visa
-        applications, scholarship opportunities, and paid internship placements.
+        abroad through{" "}
+        <span className="text-accent font-semibold"> undergraduate </span> and{" "}
+        <span className="text-accent font-semibold"> master's </span> education
+        in Italy. Our team of expert consultants is here to support you with
+        visa applications, scholarship opportunities, and paid internship
+        placements.
       </p>
 
       <p className="mb-4">

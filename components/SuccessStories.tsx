@@ -12,13 +12,13 @@ const SuccessStories = () => {
     {
       name: "Fatoş S.",
       city: "Torino",
-      text: "Thank you for your help throught the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone their dreams ❤❤.",
+      text: "Thank you for your help throught the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone reaches their dreams ❤❤.",
       image: "/images/oversealogowithtext.png", // Placeholder image
     },
     {
       name: "Maria P.",
       city: "Lecce",
-      text: "I want to give thanks to Oversea company, thanks to their service I had a 6 months of exchange in South of Italy.",
+      text: "I want to give thanks to Oversea, thanks to their service I had a 6 months of exchange in South of Italy.",
       image: "/images/oversealogowithtext.png", // Placeholder image
     },
   ];
