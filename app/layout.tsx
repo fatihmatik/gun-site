@@ -7,6 +7,9 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 export const metadata: Metadata = {
   title: "Oversea Education",
   description: "Oversea Education Avrupa'da Eğitim için sizlerle beraber.",
+  icons: {
+    icon: "/favicon.png", // Path to your favicon
+  },
 };
 
 export default function RootLayout({
