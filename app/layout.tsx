@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp ";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Oversea Education",

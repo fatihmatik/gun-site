@@ -3,7 +3,7 @@
 import React from "react";
 
 const FloatingWhatsApp = () => {
-  const phoneNumber = "+905325533019"; // Replace with your WhatsApp phone number
+  const phoneNumber = "+905415977568"; // Replace with your WhatsApp phone number
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}`;

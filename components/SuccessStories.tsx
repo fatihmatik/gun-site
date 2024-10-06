@@ -1,27 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import storiesArr from "../data/stories.json";
 
 const SuccessStories = () => {
-  const stories = [
-    {
-      name: "Kağan Çelik",
-      city: "Bari",
-      text: "Thank you for your service and support, I did my university internship in Bari for 1 month because of your work.",
-      image: "/images/oversealogowithtext.png", // Placeholder image
-    },
-    {
-      name: "Fatoş S.",
-      city: "Torino",
-      text: "Thank you for your help throught the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone reaches their dreams ❤❤.",
-      image: "/images/oversealogowithtext.png", // Placeholder image
-    },
-    {
-      name: "Maria P.",
-      city: "Lecce",
-      text: "I want to give thanks to Oversea, thanks to their service I had a 6 months of exchange in South of Italy.",
-      image: "/images/oversealogowithtext.png", // Placeholder image
-    },
-  ];
+  const stories = storiesArr;
 
   return (
     <div className="py-12">

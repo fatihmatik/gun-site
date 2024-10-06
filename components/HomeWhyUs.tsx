@@ -22,11 +22,11 @@ const HomeWhyUs = () => {
           {/* row 1 */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[40%]"></div>
-            <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[20%] text-center self-center">
+            <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[30%] text-center self-center">
               <span className="text-primary font-extrabold text-5xl">
                 300+{" "}
               </span>
-              müşterimiz
+              Bizi Tercih Edenler
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 "></div>
           </div>
@@ -35,9 +35,10 @@ const HomeWhyUs = () => {
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[50%] bg-cover bg-center"></div>
             <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[25%] text-center self-center">
-              İtalya'da
-              <span className="text-primary font-extrabold text-5xl">12 </span>
-              şehir
+              <span className="text-primary font-extrabold text-5xl">
+                100+{" "}
+              </span>
+              Şirket
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl h-[80%] w-0 lg:w-[20%] self-end bg-cover bg-center"></div>
           </div>
@@ -46,11 +47,12 @@ const HomeWhyUs = () => {
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[65%]"></div>
             <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[23%] text-center self-center">
+              İtalya'da
               <span className="text-primary font-extrabold text-5xl">
                 {" "}
                 10+{" "}
               </span>
-              iş yeri
+              şehir
             </div>
             <div className="  bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[8%]"></div>
           </div>

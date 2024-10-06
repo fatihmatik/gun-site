@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,12 +11,12 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0 justify-center items-center">
             <Link
-              href={"https://www.facebook.com"}
+              href={"https://www.facebook.com/share/1ybxXumtFyoJBCZz/"}
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/facebook-icon.svg"
                 alt="facebook-icon"
                 width={27}
@@ -27,12 +28,14 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href={"https://www.instagram.com"}
+              href={
+                "https://www.instagram.com/oversea.education?igsh=ZDRndTVvaTRmejV3"
+              }
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/instagram-icon.svg"
                 alt="facebook-icon"
                 width={28}
@@ -44,12 +47,14 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href={"https://www.linkedin.com"}
+              href={
+                "https://www.linkedin.com/company/oversea-education-consulting/"
+              }
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/linkedin-icon.svg"
                 alt="facebook-icon"
                 width={42}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HomeHero = () => {
@@ -6,39 +8,53 @@ const HomeHero = () => {
       <div className="container flex  items-center justify-between ">
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2 space-y-4 ">
-          <h1 className="text-4xl lg:text-5xl font-bold text-primary">
-            Avrupa'ya <span className="text-accent "> Hemen</span> Ulaşın!
-          </h1>
-          <p className="text-lg text-primary">
-            İtalya'da Üniversiteler için Lisans ve Yükseklisans okul başvuruları
-          </p>
+          <div className="flex">
+            <div className="flex flex-col ml-auto">
+              <h1 className="text-4xl lg:text-4xl font-bold text-primary w-full ">
+                Avrupa'ya <span className="text-accent "> Hemen</span> Ulaşın!
+              </h1>
+              <p className="text-lg text-primary mt-1">
+                Avrupa'da Staj, İş ve Okuma Fırsatları
+              </p>
+            </div>
+            {/* euflag */}
+            <Image
+              src="/svgs/european-flag.svg"
+              alt="eu-flag"
+              height={64}
+              width={96}
+              className="bg-blue-800 mx-auto rounded-xl hidden md:block"
+            />
+          </div>
 
           <div className="py-3">
-            <a
-              href="/get-started"
+            <Link
+              href="/services"
               className="bg-accent text-white py-3 px-8 rounded-lg font-medium transition-all duration-all hover:bg-lightaccent "
             >
               Gelin Başlayalım!
-            </a>
+            </Link>
           </div>
 
           <div className="flex space-x-4 mt-8 ">
-            <div className="bg-white shadow-lg p-4 rounded-lg">
-              <h4 className="font-semibold text-lg text-primary">
-                İşte yurtdışı fırsatınız
+            <Link
+              href={"/services/education"}
+              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
+            >
+              <h4 className="font-semibold text-lg text-primary text-center">
+                Avrupa'da Okuyun
               </h4>
-              <p className="text-secondary">
-                Tecrübe kazanmak isteyen bir öğrenciyseniz.
-              </p>
-            </div>
-            <div className="bg-white shadow-lg p-4 rounded-lg">
-              <h4 className="font-semibold text-lg text-primary">
+              <p className="text-secondary text-center">EĞİTİM FIRSATLARI</p>
+            </Link>
+            <Link
+              href={"services/internship"}
+              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
+            >
+              <h4 className="font-semibold text-lg text-primary text-center ">
                 Avrupa'da deneyim kazanın
               </h4>
-              <p className="text-secondary ">
-                İtalya'da 10 farklı ev sahibi şirketimiz.
-              </p>
-            </div>
+              <p className="text-secondary text-center">STAJ FIRSATLARI</p>
+            </Link>
           </div>
         </div>
         {/* right section image content */}
@@ -46,7 +62,7 @@ const HomeHero = () => {
           <img
             src="/images/oversealogowithtext.png"
             alt="Student holding books"
-            className="w-full"
+            className="w-full rounded-full"
           />
         </div>
       </div>

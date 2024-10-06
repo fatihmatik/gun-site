@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const ContactPage = () => {
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
-      <h1 className="text-center text-4xl font-extrabold text-primary mb-8">
+      <h1 className="text-center text-4xl font-sans font-bold text-primary mb-8">
         Contact Us
       </h1>
       <p className="text-center text-lg text-secondary mb-6">
@@ -13,9 +14,9 @@ const ContactPage = () => {
         form below.
       </p>
 
-      <div className="flex flex-col md:flex-row md:gap-8">
+      <div className="flex flex-col md:flex-row md:gap-8 ">
         {/* Contact Form */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 flex-1">
+        <div className="bg-white rounded-2xl shadow-lg p-6 flex-1 w-full md:w-fit ">
           <h2 className="text-2xl font-bold text-primary mb-4">Get in Touch</h2>
           <form>
             <div className="mb-4">
@@ -30,6 +31,7 @@ const ContactPage = () => {
                 id="name"
                 required
                 className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="John Doe" // Optional: Add a placeholder for clarity
               />
             </div>
             <div className="mb-4">
@@ -44,8 +46,25 @@ const ContactPage = () => {
                 id="email"
                 required
                 className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Enter your email address" // Optional: Add a placeholder for clarity
               />
             </div>
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-secondary mb-1 font-bold"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel" // Change the type to "tel" for phone numbers
+                id="phone" // Change the id to "phone"
+                required
+                className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Enter your phone number" // Optional: Add a placeholder for clarity
+              />
+            </div>
+
             <div className="mb-4">
               <label
                 htmlFor="message"
@@ -58,6 +77,7 @@ const ContactPage = () => {
                 rows={5}
                 required
                 className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="I would like to know about..." // Optional: Add a placeholder for clarity
               ></textarea>
             </div>
             <button className="w-full bg-primary text-white rounded-lg py-2 hover:bg-accent transition">
@@ -67,7 +87,7 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 mt-6 md:mt-0 flex-1">
+        <div className="bg-white rounded-2xl shadow-lg p-6 mt-6 md:mt-0 w-full md:w-fit md:mx-6 flex flex-col">
           <h2 className="text-2xl font-bold text-primary mb-4">
             Our Contact Information
           </h2>
@@ -75,22 +95,22 @@ const ContactPage = () => {
             <strong>Email:</strong> contact@oversea.com
           </p>
           <p className="text-secondary mb-2">
-            <strong>Phone:</strong> +39 123 456 7890
+            <strong>Phone:</strong> +90 541 597 7568
           </p>
           <p className="text-secondary mb-2">
-            <strong>Address:</strong> Via Roma, 123, Rome, Italy
+            <strong>Address:</strong> Ankara/Türkiye
           </p>
           <p className="text-secondary">
             Follow us on social media for updates:
           </p>
-          <div className="flex mt-4 gap-4 items-center">
+          <div className="flex mt-4 gap-4 items-center justify-end">
             <Link
-              href={"https://www.facebook.com"}
+              href={"https://www.facebook.com/share/1ybxXumtFyoJBCZz/"}
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/facebook-icon.svg"
                 alt="facebook-icon"
                 width={27}
@@ -102,12 +122,14 @@ const ContactPage = () => {
               />
             </Link>
             <Link
-              href={"https://www.instagram.com"}
+              href={
+                "https://www.instagram.com/oversea.education?igsh=ZDRndTVvaTRmejV3"
+              }
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/instagram-icon.svg"
                 alt="facebook-icon"
                 width={28}
@@ -119,12 +141,14 @@ const ContactPage = () => {
               />
             </Link>
             <Link
-              href={"https://www.linkedin.com"}
+              href={
+                "https://www.linkedin.com/company/oversea-education-consulting/"
+              }
               className="transition-transform duration-300 hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/svgs/linkedin-icon.svg"
                 alt="facebook-icon"
                 width={42}
