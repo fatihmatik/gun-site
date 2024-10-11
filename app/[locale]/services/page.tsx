@@ -1,15 +1,15 @@
+import { getI18n } from "@/locales/server";
 import React from "react";
 
-const ServicesPage = () => {
+const ServicesPage = async () => {
+  const t = await getI18n();
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
       <h1 className="text-center text-4xl font-extrabold text-primary mb-8">
-        Our Services
+        {t("servicesPage.titleH1")}
       </h1>
       <p className="text-center text-lg text-secondary mb-6 ">
-        At Oversea, we provide comprehensive consultancy services to help you
-        achieve your educational and career aspirations in Italy. Explore our
-        services below:
+        {t("servicesPage.titleP")}
       </p>
 
       {/* Services Section */}
@@ -17,89 +17,66 @@ const ServicesPage = () => {
         {/* Service 1 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Visa Consultancy
+            {t("servicesPage.service1.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            We offer expert guidance on visa applications for undergraduate and
-            master's programs in Italy, ensuring a smooth process from start to
-            finish.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service1.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
 
         {/* Service 2 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Scholarship Opportunities
+            {t("servicesPage.service2.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            We help you identify and apply for scholarships that can make your
-            education in Italy more affordable. Maximize your chances of
-            securing funding.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service2.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
 
         {/* Service 3 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Internship Placement
+            {t("servicesPage.service3.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            Our team assists in finding paid internship opportunities in Italy,
-            providing invaluable experience in your field while you study.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service3.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
 
         {/* Service 4 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Career Guidance
+            {t("servicesPage.service4.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            Receive personalized career advice and strategies to enhance your
-            employability in Italy and beyond. We are here to support your
-            professional journey.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service4.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
 
         {/* Service 5 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Language Support
+            {t("servicesPage.service5.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            We provide language support and resources to help you improve your
-            Italian skills, essential for both academic and professional
-            success.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service5.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
 
         {/* Service 6 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col">
           <h2 className="text-xl font-bold text-primary mb-4">
-            Ongoing Support
+            {t("servicesPage.service6.h2")}
           </h2>
-          <p className="text-secondary mb-4">
-            Our commitment doesn't end with your placement. We offer ongoing
-            support to ensure your experience in Italy is as rewarding as
-            possible.
-          </p>
+          <p className="text-secondary mb-4">{t("servicesPage.service1.p")}</p>
           <button className="mt-auto bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
-            Learn More
+            {t("servicesPage.learnMore")}
           </button>
         </div>
       </div>

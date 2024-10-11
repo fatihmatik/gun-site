@@ -1,17 +1,21 @@
 "use client";
 
+import { useI18n } from "@/locales/client";
 import Link from "next/link";
 import { useState } from "react";
 import SmoothCollapse from "react-smooth-collapse";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const t = useI18n();
 
   return (
     <nav className="bg-white p-4 text-gray-600 shadow-sm w-full fixed z-50 top-0 left-0">
+      <LanguageSwitcher />
       {/* Desktop Navigation */}
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl ">
         <div className="flex justify-center items-center">
@@ -19,10 +23,10 @@ export default function NavBar() {
             <Link href="/">
               <h1 className="relative group inline-block">
                 <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
-                  Oversea Education & Consulting
+                  {t("navBar.title")}
                 </span>
                 <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
-                  Oversea Education & Consulting
+                  {t("navBar.title")}
                 </span>
                 <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
                 <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
@@ -34,28 +38,28 @@ export default function NavBar() {
         <ul className="flex space-x-16 font-extralight text-base">
           <li>
             <Link href="/about" className="relative group inline-block">
-              Biz Kimiz
+              {t("navBar.whoAreWe")}
               <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
             </Link>
           </li>
           <li>
             <Link href="/services" className="relative group inline-block">
-              Servislerimiz
+              {t("navBar.services")}
               <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
             </Link>
           </li>
           <li>
             <Link href="/stories" className="relative group inline-block">
-              Başarı Hikayeleri
+              {t("navBar.successStories")}
               <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
             </Link>
           </li>
           <li>
             <Link href="/contact" className="relative group inline-block">
-              İletişim
+              {t("navBar.contact")}
               <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
             </Link>
@@ -67,7 +71,7 @@ export default function NavBar() {
             href="/contact"
             className="border-2 border-secondary text-secondary py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-colors"
           >
-            Randevu Alın
+            {t("navBar.appointment")}
           </Link>
         </div>
       </div>
@@ -78,10 +82,10 @@ export default function NavBar() {
           <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
             <h1 className="relative group inline-block">
               <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
-                Oversea Education & Consulting
+                {t("navBar.title")}
               </span>
               <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
-                Oversea Education & Consulting
+                {t("navBar.title")}
               </span>
             </h1>
           </Link>
@@ -131,22 +135,22 @@ export default function NavBar() {
         <ul className="flex flex-col space-y-4 my-4 font-semibold text-base md:hidden text-right ">
           <li className="hover:text-gray-800">
             <Link href="/about" onClick={toggleMenu}>
-              Biz Kimiz
+              {t("navBar.whoAreWe")}
             </Link>
           </li>
           <li className="hover:text-gray-800">
             <Link href="/services" onClick={toggleMenu}>
-              Servislerimiz
+              {t("navBar.services")}
             </Link>
           </li>
           <li className="hover:text-gray-800">
             <Link href="/stories" onClick={toggleMenu}>
-              Başarı Hikayeleri
+              {t("navBar.successStories")}
             </Link>
           </li>
           <li className="hover:text-gray-800">
             <Link href="/contact" onClick={toggleMenu}>
-              İletişim
+              {t("navBar.contact")}
             </Link>
           </li>
           <li>
@@ -155,7 +159,7 @@ export default function NavBar() {
               onClick={toggleMenu}
               className="border-2 border-secondary text-secondary py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-colors"
             >
-              Randevu Alın
+              {t("navBar.appointment")}
             </Link>
           </li>
         </ul>

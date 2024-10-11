@@ -1,19 +1,13 @@
 "use client";
-import { useI18n, useChangeLocale, useCurrentLocale } from "@/locales/client";
+import { useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import Link from "next/link";
 
 const HomeHero = () => {
   const t = useI18n();
-  const changeLocale = useChangeLocale();
   return (
     <div className="py-12 container mx-auto px-6 lg:px-16">
-      {/*  */}
-      <button onClick={() => changeLocale("en")}>English</button>
-      <button onClick={() => changeLocale("tr")}>Turkish</button>
-
-      {/*  */}
       <div className="container flex  items-center justify-between ">
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2 space-y-4 ">
