@@ -1,4 +1,4 @@
-import SuccessStories from "@/components/SuccessStories";
+import SuccessStories from "@/app/[locale]/components/SuccessStories";
 import React from "react";
 
 const page = () => {

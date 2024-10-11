@@ -1,18 +1,20 @@
+import { getI18n } from "@/locales/server";
 import React from "react";
 
-const HomeWhyUs = () => {
+const HomeWhyUs = async () => {
+  const t = await getI18n();
   return (
     <div className="pb-12">
       <div className="flex flex-col md:flex-row flex-1 pt-16">
         <h1 className="text-center md:w-1/3 md:ml-16 text-4xl font-extrabold text-primary">
-          Neden <span className="text-secondary text-5xl">Oversea</span>'yı
-          Tercih Etmelisiniz?
+          {t("homeWhyUs.h1.left")}{" "}
+          <span className="text-secondary text-5xl">
+            {t("homeWhyUs.h1.span")}
+          </span>
+          {t("homeWhyUs.h1.right")}
         </h1>
         <p className="text-center  md:w-2/3 md:text-end md:mr-16 text-primary pt-4">
-          Avrupa hem eğitim hem de çalışma deneyimi için olsun profesyonel
-          ekibimizle beraber herhangi bir engelle ya da pürüzle karşılaşmadan en
-          iyi deneyimi yaşayabilmek için gelin beraber hayallerinizi
-          gerçekleştirelim!
+          {t("homeWhyUs.p")}
         </p>
       </div>
 
@@ -26,7 +28,7 @@ const HomeWhyUs = () => {
               <span className="text-primary font-extrabold text-5xl">
                 300+{" "}
               </span>
-              Bizi Tercih Edenler
+              {t("homeWhyUs.row1")}
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 "></div>
           </div>
@@ -38,7 +40,7 @@ const HomeWhyUs = () => {
               <span className="text-primary font-extrabold text-5xl">
                 100+{" "}
               </span>
-              Şirket
+              {t("homeWhyUs.row2")}
             </div>
             <div className="bg-gradient_flexbox_background rounded-3xl h-[80%] w-0 lg:w-[20%] self-end bg-cover bg-center"></div>
           </div>
@@ -47,12 +49,12 @@ const HomeWhyUs = () => {
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[65%]"></div>
             <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[23%] text-center self-center">
-              İtalya'da
+              {t("homeWhyUs.row3.left")}
               <span className="text-primary font-extrabold text-5xl">
                 {" "}
                 10+{" "}
               </span>
-              şehir
+              {t("homeWhyUs.row3.right")}
             </div>
             <div className="  bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[8%]"></div>
           </div>

@@ -1,14 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import storiesArr from "../data/stories.json";
+import storiesArr from "../../../data/stories.json";
+import { getCurrentLocale, getI18n } from "@/locales/server";
 
-const SuccessStories = () => {
+const SuccessStories = async () => {
   const stories = storiesArr;
+
+  const locale = getCurrentLocale();
+  const t = await getI18n();
 
   return (
     <div className="py-12">
       <h2 className="text-center text-4xl font-bold bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold pb-8 transition-transform duration-300 hover:scale-x-105">
-        Başarı Hikayelerimiz
+        {t("successStories.title")}
       </h2>
 
       <div className="flex flex-col md:flex-row md:gap-4 lg:gap-8 justify-center ">
@@ -34,7 +38,7 @@ const SuccessStories = () => {
 
             <div className="col-span-2 col-start-1 row-start-2 bg-white rounded-tl-[40px] rounded-b-[40px] p-4 ">
               <p className="text-primary text-lg text-center mt-4">
-                {story.text}
+                {story.text[locale]}
               </p>
             </div>
           </div>

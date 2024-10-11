@@ -1,21 +1,34 @@
+"use client";
+import { useI18n, useChangeLocale, useCurrentLocale } from "@/locales/client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const HomeHero = () => {
+  const t = useI18n();
+  const changeLocale = useChangeLocale();
   return (
     <div className="py-12 container mx-auto px-6 lg:px-16">
+      {/*  */}
+      <button onClick={() => changeLocale("en")}>English</button>
+      <button onClick={() => changeLocale("tr")}>Turkish</button>
+
+      {/*  */}
       <div className="container flex  items-center justify-between ">
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2 space-y-4 ">
           <div className="flex">
             <div className="flex flex-col ml-auto">
               <h1 className="text-4xl lg:text-4xl font-bold text-primary w-full ">
-                Avrupa'ya <span className="text-secondary "> Hemen</span>{" "}
-                Ulaşın!
+                {t("homeHero.leftSectionTextH1.Left")}
+                <span className="text-secondary ">
+                  {" "}
+                  {t("homeHero.leftSectionTextH1.Span")}
+                </span>{" "}
+                {t("homeHero.leftSectionTextH1.Right")}
               </h1>
               <p className="text-lg text-primary mt-1">
-                Avrupa'da Staj, İş ve Okuma Fırsatları
+                {t("homeHero.leftSectionTextP")}
               </p>
             </div>
             {/* euflag */}
@@ -33,28 +46,32 @@ const HomeHero = () => {
               href="/services"
               className="bg-secondary text-white py-3 px-8 rounded-lg font-medium transition-all duration-all hover:bg-secondary "
             >
-              Gelin Başlayalım!
+              {t("homeHero.leftSectionTextLink")}
             </Link>
           </div>
-
+          {/* Services */}
           <div className="flex space-x-4 mt-8 ">
             <Link
               href={"/services/education"}
               className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
             >
               <h4 className="font-semibold text-lg text-primary text-center">
-                Avrupa'da Okuyun
+                {t("homeHero.leftSectionLeftH4")}
               </h4>
-              <p className="text-secondary text-center">EĞİTİM FIRSATLARI</p>
+              <p className="text-secondary text-center">
+                {t("homeHero.leftSectionLeftP")}
+              </p>
             </Link>
             <Link
               href={"services/internship"}
               className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
             >
               <h4 className="font-semibold text-lg text-primary text-center ">
-                Avrupa'da deneyim kazanın
+                {t("homeHero.leftSectionRightH4")}
               </h4>
-              <p className="text-secondary text-center">STAJ FIRSATLARI</p>
+              <p className="text-secondary text-center">
+                {t("homeHero.leftSectionRightP")}
+              </p>
             </Link>
           </div>
         </div>

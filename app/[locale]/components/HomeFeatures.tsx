@@ -1,16 +1,22 @@
+import { getI18n } from "@/locales/server";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const HomeFeatures: React.FC = () => {
+const HomeFeatures: React.FC = async () => {
+  const t = await getI18n();
+
   return (
     <section className="py-12">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-primary">
-            Avrupa'ya Gitmenin
-            <span className="text-secondary"> En Kolay </span>
-            Yolu
+            {t("homeFeatures.topH2Left")}
+            <span className="text-secondary font-semibold">
+              {" "}
+              {t("homeFeatures.topH2Span")}{" "}
+            </span>
+            {t("homeFeatures.topH2Right")}
           </h2>
         </div>
 
@@ -32,13 +38,15 @@ const HomeFeatures: React.FC = () => {
               />
             </div>
             <h3 className="text-xl lg:text-2xl font-semibold text-primary mb-4">
-              Servislerimiz
+              {t("homeFeatures.column1.h3")}
             </h3>
             <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
-            <p className="text-primary">Avrupa'da Çalışma ya da Staj</p>
+            <p className="text-primary text-center">
+              {t("homeFeatures.column1.p1")}
+            </p>
 
-            <p className="text-primary">
-              Avrupa'da Lisans/Yükseklisans İmkanı{" "}
+            <p className="text-primary text-center">
+              {t("homeFeatures.column1.p2")}{" "}
             </p>
           </Link>
 
@@ -62,7 +70,7 @@ const HomeFeatures: React.FC = () => {
               </svg>
             </div>
             <h3 className="text-xl lg:text-2xl font-semibold text-primary mb-4">
-              OVERSEA EĞİTİM VE DANIŞMANLIK
+              {t("homeFeatures.column2.h3")}
             </h3>
             <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
             <Link
@@ -93,11 +101,11 @@ const HomeFeatures: React.FC = () => {
               />
             </div>
             <h3 className="text-lg lg:text-xl font-semibold text-primary mb-4">
-              Avrupa Çok Yakın
+              {t("homeFeatures.column3.h3")}
             </h3>
             <div className="bg-neutral-300 h-[1px] w-2/3 my-2 "></div>
 
-            <p className="text-primary">Hemen Başvur!</p>
+            <p className="text-primary">{t("homeFeatures.column3.p")}</p>
           </Link>
         </div>
       </div>

@@ -2,19 +2,28 @@
   {
     "name": "Kağan Ç.",
     "city": "Bari",
-    "text": "Thank you for your service and support, I did my university internship in Bari for 1 month because of your work.",
+    "text": {
+      "en": "Thank you for your service and support, I did my university internship in Bari for 1 month because of your work.",
+      "tr": "Hizmetiniz ve desteğiniz için teşekkür ederim, çalışmanız sayesinde üniversite stajımı Bari'de 1 ay yaptım."
+    },
     "image": "/images/oversealogowithtext.png"
   },
   {
     "name": "Fatoş S.",
     "city": "Torino",
-    "text": "Thank you for your help throught the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone reaches their dreams ❤❤.",
+    "text": {
+      "en": "Thank you for your help throughout the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone reaches their dreams ❤❤.",
+      "tr": "Tüm süreç boyunca yardımlarınız için teşekkür ederim. Oversea, benim için imkansız olan başvuru sürecinde bana yardımcı oldu. Umarım herkes hayallerine ulaşır ❤❤."
+    },
     "image": "/images/oversealogowithtext.png"
   },
   {
     "name": "Maria P.",
     "city": "Lecce",
-    "text": "I want to give thanks to Oversea, thanks to their service I had a 6 months of exchange in South of Italy.",
+    "text": {
+      "en": "I want to give thanks to Oversea, thanks to their service I had a 6 months of exchange in South of Italy.",
+      "tr": "Oversea'ya teşekkür etmek istiyorum, hizmetleri sayesinde Güney İtalya'da 6 aylık bir değişim programına katıldım."
+    },
     "image": "/images/oversealogowithtext.png"
   }
 ]
