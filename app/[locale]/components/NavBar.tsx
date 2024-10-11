@@ -8,14 +8,15 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const t = useI18n();
 
   return (
     <nav className="bg-white p-4 text-gray-600 shadow-sm w-full fixed z-50 top-0 left-0">
-      <LanguageSwitcher />
       {/* Desktop Navigation */}
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl ">
         <div className="flex justify-center items-center">
@@ -66,7 +67,7 @@ export default function NavBar() {
           </li>
         </ul>
 
-        <div>
+        <div className="flex gap-2">
           <Link
             href="/contact"
             className="border-2 border-secondary text-secondary py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-colors"
@@ -74,6 +75,7 @@ export default function NavBar() {
             {t("navBar.appointment")}
           </Link>
         </div>
+        <LanguageSwitcher />
       </div>
 
       {/* Mobile Navbar */}
@@ -152,6 +154,9 @@ export default function NavBar() {
             <Link href="/contact" onClick={toggleMenu}>
               {t("navBar.contact")}
             </Link>
+          </li>
+          <li className="self-end">
+            <LanguageSwitcher />
           </li>
           <li>
             <Link
