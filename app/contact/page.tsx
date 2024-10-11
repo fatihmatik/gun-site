@@ -80,7 +80,7 @@ const ContactPage = () => {
                 placeholder="I would like to know about..." // Optional: Add a placeholder for clarity
               ></textarea>
             </div>
-            <button className="w-full bg-primary text-white rounded-lg py-2 hover:bg-accent transition">
+            <button className="w-full bg-primary text-white rounded-lg py-2 hover:bg-secondary transition">
               Send Message
             </button>
           </form>

@@ -5,12 +5,13 @@ import { useState } from "react";
 import SmoothCollapse from "react-smooth-collapse";
 
 export default function NavBar() {
-  const [isOpen, setIsOpen] = useState(false); // State for managing the mobile menu open/close
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <nav className="bg-background p-4 text-gray-600 shadow-sm w-full fixed z-50 top-0 left-0">
+    <nav className="bg-white p-4 text-gray-600 shadow-sm w-full fixed z-50 top-0 left-0">
       {/* Desktop Navigation */}
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl ">
         <div className="flex justify-center items-center">
@@ -64,7 +65,7 @@ export default function NavBar() {
         <div>
           <Link
             href="/contact"
-            className="border-2 border-lightaccent text-lightaccent py-2 px-4 rounded-lg hover:bg-lightaccent hover:text-white transition-colors"
+            className="border-2 border-secondary text-secondary py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-colors"
           >
             Randevu Alın
           </Link>
@@ -73,9 +74,8 @@ export default function NavBar() {
 
       {/* Mobile Navbar */}
       <div className="md:hidden flex justify-between items-center">
-        {/* Mobile Logo */}
         <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
-          <Link href="/">
+          <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
             <h1 className="relative group inline-block">
               <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
                 Oversea Education & Consulting
@@ -90,7 +90,7 @@ export default function NavBar() {
         {/* Hamburger Menu Icon */}
         <button
           onClick={toggleMenu}
-          className="focus:outline-none focus:ring-2 focus:ring-lightaccent"
+          className="focus:outline-none focus:ring-2 focus:ring-secondary"
         >
           {isOpen ? (
             <svg
@@ -127,24 +127,33 @@ export default function NavBar() {
       </div>
 
       {/* Mobile Menu Links */}
-      <SmoothCollapse expanded={isOpen} heightTransition="300ms">
+      <SmoothCollapse expanded={isOpen} heightTransition="200ms">
         <ul className="flex flex-col space-y-4 my-4 font-semibold text-base md:hidden text-right ">
           <li className="hover:text-gray-800">
-            <Link href="/about">Biz Kimiz</Link>
+            <Link href="/about" onClick={toggleMenu}>
+              Biz Kimiz
+            </Link>
           </li>
           <li className="hover:text-gray-800">
-            <Link href="/services">Servislerimiz</Link>
+            <Link href="/services" onClick={toggleMenu}>
+              Servislerimiz
+            </Link>
           </li>
           <li className="hover:text-gray-800">
-            <Link href="/stories">Başarı Hikayeleri</Link>
+            <Link href="/stories" onClick={toggleMenu}>
+              Başarı Hikayeleri
+            </Link>
           </li>
           <li className="hover:text-gray-800">
-            <Link href="/contact">İletişim</Link>
+            <Link href="/contact" onClick={toggleMenu}>
+              İletişim
+            </Link>
           </li>
           <li>
             <Link
               href="/contact"
-              className="border-2 border-lightaccent text-lightaccent py-2 px-4 rounded-lg hover:bg-lightaccent hover:text-white transition-colors"
+              onClick={toggleMenu}
+              className="border-2 border-secondary text-secondary py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition-colors"
             >
               Randevu Alın
             </Link>

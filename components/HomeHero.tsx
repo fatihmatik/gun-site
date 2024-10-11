@@ -11,7 +11,8 @@ const HomeHero = () => {
           <div className="flex">
             <div className="flex flex-col ml-auto">
               <h1 className="text-4xl lg:text-4xl font-bold text-primary w-full ">
-                Avrupa'ya <span className="text-accent "> Hemen</span> Ulaşın!
+                Avrupa'ya <span className="text-secondary "> Hemen</span>{" "}
+                Ulaşın!
               </h1>
               <p className="text-lg text-primary mt-1">
                 Avrupa'da Staj, İş ve Okuma Fırsatları
@@ -30,7 +31,7 @@ const HomeHero = () => {
           <div className="py-3">
             <Link
               href="/services"
-              className="bg-accent text-white py-3 px-8 rounded-lg font-medium transition-all duration-all hover:bg-lightaccent "
+              className="bg-secondary text-white py-3 px-8 rounded-lg font-medium transition-all duration-all hover:bg-secondary "
             >
               Gelin Başlayalım!
             </Link>

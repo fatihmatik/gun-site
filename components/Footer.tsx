@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-background py-6 text-gray-600 mt-auto">
+    <footer className="bg-white py-6 text-gray-600 mb-6 md:mb-auto mt-auto">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-center md:text-left text-lg font-semibold text-primary">
-            © 2024 Oversea Education. All Rights Reserved.
+            © 2024 Oversea Education & Consulting. All Rights Reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0 justify-center items-center">
             <Link

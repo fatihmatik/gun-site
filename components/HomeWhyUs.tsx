@@ -5,8 +5,8 @@ const HomeWhyUs = () => {
     <div className="pb-12">
       <div className="flex flex-col md:flex-row flex-1 pt-16">
         <h1 className="text-center md:w-1/3 md:ml-16 text-4xl font-extrabold text-primary">
-          Neden <span className="text-accent text-5xl">Oversea</span>'yı Tercih
-          Etmelisiniz?
+          Neden <span className="text-secondary text-5xl">Oversea</span>'yı
+          Tercih Etmelisiniz?
         </h1>
         <p className="text-center  md:w-2/3 md:text-end md:mr-16 text-primary pt-4">
           Avrupa hem eğitim hem de çalışma deneyimi için olsun profesyonel
@@ -22,7 +22,7 @@ const HomeWhyUs = () => {
           {/* row 1 */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[40%]"></div>
-            <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[30%] text-center self-center">
+            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[30%] text-center self-center">
               <span className="text-primary font-extrabold text-5xl">
                 300+{" "}
               </span>
@@ -34,7 +34,7 @@ const HomeWhyUs = () => {
           {/* Row 2 */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[50%] bg-cover bg-center"></div>
-            <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[25%] text-center self-center">
+            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[25%] text-center self-center">
               <span className="text-primary font-extrabold text-5xl">
                 100+{" "}
               </span>
@@ -46,7 +46,7 @@ const HomeWhyUs = () => {
           {/* row 3  */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[65%]"></div>
-            <div className="bg-lightaccent rounded-3xl text-4xl text-white p-4 lg:p-8 w-full lg:w-[23%] text-center self-center">
+            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[23%] text-center self-center">
               İtalya'da
               <span className="text-primary font-extrabold text-5xl">
                 {" "}

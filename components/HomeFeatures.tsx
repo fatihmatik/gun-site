@@ -9,7 +9,7 @@ const HomeFeatures: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-primary">
             Avrupa'ya Gitmenin
-            <span className="text-accent"> En Kolay </span>
+            <span className="text-secondary"> En Kolay </span>
             Yolu
           </h2>
         </div>
@@ -22,7 +22,7 @@ const HomeFeatures: React.FC = () => {
             className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1 transition-all duration-300 md:hover:-translate-y-8"
           >
             {/* eustars */}
-            <div className="bg-accent rounded-full p-1 mb-6">
+            <div className="bg-secondary rounded-full p-1 mb-6">
               <Image
                 src="/svgs/european-flag-accent.svg"
                 alt="eu-flag"
@@ -44,7 +44,7 @@ const HomeFeatures: React.FC = () => {
 
           {/* Column 2 */}
           <div className="bg-white shadow-lg rounded-lg p-8 flex-1 flex flex-col items-center text-center transition-all duration-300 md:hover:-translate-y-4">
-            <div className="bg-accent rounded-full p-4 mb-6">
+            <div className="bg-secondary rounded-full p-4 mb-6">
               <svg
                 width="32px"
                 height="32px"
@@ -83,7 +83,7 @@ const HomeFeatures: React.FC = () => {
             className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1 transition-all duration-300 md:hover:-translate-y-4"
           >
             {/* eustars */}
-            <div className="bg-accent rounded-full p-1 mb-6">
+            <div className="bg-secondary rounded-full p-1 mb-6">
               <Image
                 src="/svgs/european-flag-accent.svg"
                 alt="eu-flag"
