@@ -139,4 +139,7 @@ export default {
     paragraph7:
       "Oversea olarak hayallerinizi gerçekleştirmenize yardımcı olmak için buradayız. İtalya'daki lisans ve yüksek lisans programları ve Avrupa'daki ücretli staj fırsatları için vize hizmetlerindeki uzmanlığımızdan yararlanın. Hemen bizimle iletişime geçin ve size en uygun eğitim ve kariyer fırsatlarını keşfetmeye başlayalım!",
   },
+  floatingWhatsApp: {
+    connectUs: "Whatsapp'dan bize ulaşın",
+  },
 } as const;

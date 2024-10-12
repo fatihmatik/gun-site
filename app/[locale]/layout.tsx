@@ -3,8 +3,9 @@ import "./globals.css";
 import NavBar from "../[locale]/components/NavBar";
 import Footer from "../[locale]/components/Footer";
 import FloatingWhatsApp from "@/app/[locale]/components/FloatingWhatsApp";
-import { I18nProviderClient } from "@/locales/client";
 import { ReactElement } from "react";
+import { Provider } from "./provider";
+import { getCurrentLocale } from "@/locales/server";
 
 export const metadata: Metadata = {
   title: "Oversea Education | overseaeducation.com",
@@ -27,23 +28,19 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
-  params: { locale },
-  children,
-}: {
-  params: { locale: string };
-  children: ReactElement;
-}) {
+export default function RootLayout({ children }: { children: ReactElement }) {
+  const currentLocale = getCurrentLocale();
+
   return (
     <html lang="tr">
-      <I18nProviderClient locale={locale} fallback={<p>Loading...</p>}>
-        <body className="flex flex-col min-h-screen bg-gradient_background">
+      <body className="flex flex-col min-h-screen bg-gradient_background">
+        <Provider locale={currentLocale}>
           <NavBar />
           <div className="px-4 md:px-32 mt-16">{children}</div>
-          {/* <FloatingWhatsApp />*/}
+          <FloatingWhatsApp />
           <Footer />
-        </body>
-      </I18nProviderClient>
+        </Provider>
+      </body>
     </html>
   );
 }

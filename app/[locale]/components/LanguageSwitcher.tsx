@@ -1,10 +1,11 @@
 "use client";
 
-import { useChangeLocale } from "@/locales/client";
+import { useChangeLocale, useCurrentLocale } from "@/locales/client";
 import ReactCountryFlag from "react-country-flag";
 
 const LanguageSwitcher = () => {
   const changeLocale = useChangeLocale();
+  const locale = useCurrentLocale();
 
   return (
     <div className="flex justify-center items-center space-x-3 ">
@@ -12,12 +13,12 @@ const LanguageSwitcher = () => {
         <ReactCountryFlag
           countryCode="US"
           svg
-          height={32}
-          width={64}
           style={{
             fontSize: "2em",
+            height: 24,
+            width: 32,
           }}
-          className="rounded-lg"
+          className="rounded-md"
         />
       </button>
       <div className="border border-t-gray-300 h-8" />
@@ -25,12 +26,12 @@ const LanguageSwitcher = () => {
         <ReactCountryFlag
           countryCode="TR"
           svg
-          height={32}
-          width={64}
           style={{
             fontSize: "2em",
+            height: 24,
+            width: 32,
           }}
-          className="rounded-lg"
+          className="rounded-md"
         />
       </button>
     </div>

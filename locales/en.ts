@@ -139,4 +139,7 @@ export default {
     paragraph7:
       "At Oversea, we are here to help you realize your dreams. Benefit from our expertise in visa services for undergraduate and master's programs in Italy and paid internship opportunities in Europe. Contact us now, and let's start exploring the education and career opportunities that suit you best!",
   },
+  floatingWhatsApp: {
+    connectUs: "Connect to us from Whatsapp",
+  },
 } as const;

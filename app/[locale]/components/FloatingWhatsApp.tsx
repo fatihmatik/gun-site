@@ -1,8 +1,10 @@
 "use client";
 
+import { useI18n } from "@/locales/client";
 import React from "react";
 
 const FloatingWhatsApp = () => {
+  const t = useI18n();
   const phoneNumber = "+905415977568"; // Replace with your WhatsApp phone number
 
   const handleClick = () => {
@@ -102,7 +104,7 @@ const FloatingWhatsApp = () => {
             </g>
           </svg>
           <p className="text-white flex items-center justify-center text-base">
-            Connect to us from WhatsApp
+            {t("floatingWhatsApp.connectUs")}
           </p>
         </div>
       </div>
