@@ -6,6 +6,7 @@ import FloatingWhatsApp from "@/app/[locale]/components/FloatingWhatsApp";
 import { ReactElement } from "react";
 import { Provider } from "./provider";
 import { getCurrentLocale } from "@/locales/server";
+import PageWrapper from "./components/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Oversea Education | overseaeducation.com",
@@ -36,7 +37,9 @@ export default function RootLayout({ children }: { children: ReactElement }) {
       <body className="flex flex-col min-h-screen bg-gradient_background">
         <Provider locale={currentLocale}>
           <NavBar />
-          <div className="px-4 md:px-32 mt-16">{children}</div>
+          <PageWrapper>
+            <div className="px-4 md:px-32 mt-16">{children}</div>
+          </PageWrapper>
           <FloatingWhatsApp />
           <Footer />
         </Provider>
