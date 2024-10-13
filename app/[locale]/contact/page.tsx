@@ -97,9 +97,12 @@ const ContactPage = async () => {
             <strong>Email:</strong> contact@oversea.com
           </p>
           <p className="text-secondary mb-2">
-            <strong>{t("contactPage.contactInfo.phone")}</strong> +90 541 597
-            7568
+            <strong>{t("contactPage.contactInfo.phone")}</strong>{" "}
+            <a href="tel:+905415977568" className="hover:underline">
+              +90 541 597 7568
+            </a>
           </p>
+
           <p className="text-secondary mb-2">
             <strong>{t("contactPage.contactInfo.address")}</strong>{" "}
             Ankara/Türkiye

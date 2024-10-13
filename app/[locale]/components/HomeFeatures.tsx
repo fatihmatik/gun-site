@@ -87,7 +87,7 @@ const HomeFeatures: React.FC = async () => {
 
           {/* Column 3 */}
           <Link
-            href="/appointment"
+            href="/contact"
             className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-center items-center flex-1 transition-all duration-300 md:hover:-translate-y-4"
           >
             {/* eustars */}

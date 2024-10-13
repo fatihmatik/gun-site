@@ -1,5 +1,6 @@
 import { getI18n } from "@/locales/server";
 import React from "react";
+import AnimatedCounterRow from "./AnimatedCounterRow";
 
 const HomeWhyUs = async () => {
   const t = await getI18n();
@@ -24,38 +25,34 @@ const HomeWhyUs = async () => {
           {/* row 1 */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[40%]"></div>
-            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[30%] text-center self-center">
-              <span className="text-primary font-extrabold text-5xl">
-                300+{" "}
-              </span>
-              {t("homeWhyUs.row1")}
-            </div>
+            <AnimatedCounterRow
+              number={300}
+              rightString={t("homeWhyUs.row1")}
+              boxWidth={30}
+            />
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 "></div>
           </div>
 
           {/* Row 2 */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[50%] bg-cover bg-center"></div>
-            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[25%] text-center self-center">
-              <span className="text-primary font-extrabold text-5xl">
-                100+{" "}
-              </span>
-              {t("homeWhyUs.row2")}
-            </div>
+            <AnimatedCounterRow
+              number={100}
+              rightString={t("homeWhyUs.row2")}
+              boxWidth={25}
+            />
             <div className="bg-gradient_flexbox_background rounded-3xl h-[80%] w-0 lg:w-[20%] self-end bg-cover bg-center"></div>
           </div>
 
           {/* row 3  */}
           <div className="flex w-full h-36 gap-8">
             <div className="bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[65%]"></div>
-            <div className="bg-white rounded-3xl text-4xl text-secondary p-4 lg:p-8 w-full lg:w-[23%] text-center self-center">
-              {t("homeWhyUs.row3.left")}
-              <span className="text-primary font-extrabold text-5xl">
-                {" "}
-                10+{" "}
-              </span>
-              {t("homeWhyUs.row3.right")}
-            </div>
+            <AnimatedCounterRow
+              leftString={t("homeWhyUs.row3.left")}
+              number={10}
+              rightString={t("homeWhyUs.row3.right")}
+              boxWidth={23}
+            />
             <div className="  bg-gradient_flexbox_background rounded-3xl w-0 lg:w-[8%]"></div>
           </div>
         </div>

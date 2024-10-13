@@ -47,7 +47,7 @@ const HomeHero = () => {
           <div className="flex space-x-4 mt-8 ">
             <Link
               href={"/services/education"}
-              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
+              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300 border-[2px] border-blue-500"
             >
               <h4 className="font-semibold text-lg text-primary text-center">
                 {t("homeHero.leftSectionLeftH4")}
@@ -58,7 +58,7 @@ const HomeHero = () => {
             </Link>
             <Link
               href={"services/internship"}
-              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300"
+              className="bg-white shadow-lg p-4 rounded-lg flex flex-col flex-1 hover:scale-110 transition-all duration-300 border-[2px] border-blue-500"
             >
               <h4 className="font-semibold text-lg text-primary text-center ">
                 {t("homeHero.leftSectionRightH4")}
