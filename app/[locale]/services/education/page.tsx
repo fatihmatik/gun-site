@@ -67,7 +67,9 @@ const EducationPage = async () => {
           {t("servicesEducationPage.callToAction.p")}
         </p>
         <Link
-          href="/contact"
+          href="https://forms.gle/ogGVDV38wPpKbnnR6"
+          target="_blank"
+          rel="noreferrer"
           className=" px-8 py-4 bg-secondary text-white font-semibold rounded-lg hover:bg-primary transition-colors"
         >
           {t("servicesEducationPage.callToAction.link")}

@@ -92,7 +92,7 @@ export default {
       p: "İtalya'daki eğitiminizi daha ekonomik hale getirebilecek bursları belirlemenize ve bunlara başvurmanıza yardımcı oluyoruz. Finansman sağlama şansınızı en üst düzeye çıkarın.",
     },
     service3: {
-      h2: "Staj Programları",
+      h2: "İş/Staj Programları",
       p: "Ekibimiz, İtalya'da ücretli staj fırsatları bulmanıza yardımcı olarak, eğitiminiz sırasında alanınızda paha biçilmez bir deneyim sağlar.",
     },
     service4: {
@@ -228,7 +228,7 @@ export default {
     },
     callToAction: {
       h3: "Başvurmaya Hazır mısınız?",
-      p: "DSU bursunuzu güvence altına almak ve İtalya'daki eğitim deneyiminizi geliştirmek için bir sonraki adımı atın.",
+      p: "DSU bursunuzu güvence altına almak ve İtalya'daki eğitim deneyiminizi geliştirmek için bir sonraki adımı atın ve bizlerle iletişime geçin.",
       link: "Yardım için Bize Ulaşın",
     },
   },

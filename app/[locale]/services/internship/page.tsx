@@ -47,7 +47,9 @@ const page = async () => {
           {t("servicesIntershipPage.callToAction.p")}
         </p>
         <Link
-          href="/contact"
+          href="https://forms.gle/aVBjhJzut2tFGPRW7"
+          target="_blank"
+          rel="noreferrer"
           className=" px-8 py-4 bg-secondary text-white font-semibold rounded-lg hover:bg-primary transition-colors"
         >
           {t("servicesIntershipPage.callToAction.link")}

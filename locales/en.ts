@@ -92,7 +92,7 @@ export default {
       p: "We help you identify and apply for scholarships that can make your education in Italy more affordable. Maximize your chances of securing funding.",
     },
     service3: {
-      h2: "Internship Programmes",
+      h2: "Work/Internship Programmes",
       p: "Our team assists in finding paid internship opportunities in Italy, providing invaluable experience in your field while you study.",
     },
     service4: {
@@ -228,7 +228,7 @@ export default {
     },
     callToAction: {
       h3: "Ready to Apply?",
-      p: "Take the next step toward securing your DSU scholarship and enhancing your educational experience in Italy.",
+      p: "Take the next step toward for securing your DSU scholarship and enhancing your educational experience in Italy. Get into contact with us.",
       link: "Contact Us for Assistance",
     },
   },
