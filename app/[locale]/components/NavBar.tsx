@@ -23,7 +23,10 @@ export default function NavBar() {
           <div className="">
             <Link href="/">
               <h1 className="relative group inline-block">
-                <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+                {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+                  {t("navBar.title")}
+                </span> */}
+                <span className="text-secondary font-notosansbold text-center text-xl">
                   {t("navBar.title")}
                 </span>
 
@@ -81,7 +84,10 @@ export default function NavBar() {
         <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
           <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
             <h1 className="relative group inline-block">
-              <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+              {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+                {t("navBar.title")}
+              </span> */}
+              <span className="text-secondary font-notosansbold text-center text-xl">
                 {t("navBar.title")}
               </span>
             </h1>
