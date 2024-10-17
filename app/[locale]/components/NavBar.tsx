@@ -26,9 +26,7 @@ export default function NavBar() {
                 <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
                   {t("navBar.title")}
                 </span>
-                <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-center text-xl ">
-                  {t("navBar.title")}
-                </span>
+
                 <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
                 <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               </h1>
@@ -84,9 +82,6 @@ export default function NavBar() {
           <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
             <h1 className="relative group inline-block">
               <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
-                {t("navBar.title")}
-              </span>
-              <span className="absolute inset-0 w-full h-full bg-gradient_flexbox_background bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out font-notosansbold text-start text-xl ">
                 {t("navBar.title")}
               </span>
             </h1>
