@@ -20,21 +20,19 @@ export default function NavBar() {
       {/* Desktop Navigation */}
       <div className="md:flex hidden justify-between items-center mx-auto max-w-7xl ">
         <div className="flex justify-center items-center">
-          <div className="">
-            <Link href="/">
-              <h1 className="relative group inline-block">
-                {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+          <Link href="/">
+            <h1 className="relative group inline-block">
+              {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
                   {t("navBar.title")}
                 </span> */}
-                <span className="text-secondary font-notosansbold text-center text-xl">
-                  {t("navBar.title")}
-                </span>
+              <span className="text-secondary font-notosansbold text-center text-xl">
+                {t("navBar.title")}
+              </span>
 
-                <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
-                <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
-              </h1>
-            </Link>
-          </div>
+              <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+              <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+            </h1>
+          </Link>
         </div>
 
         <ul className="flex space-x-16 font-extralight text-base">
@@ -81,18 +79,16 @@ export default function NavBar() {
 
       {/* Mobile Navbar */}
       <div className="md:hidden flex justify-between items-center">
-        <div className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-xl">
-          <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
-            <h1 className="relative group inline-block">
-              {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
+        <Link href="/" onClick={() => (isOpen ? setIsOpen(!isOpen) : null)}>
+          <h1 className="relative group inline-block">
+            {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
                 {t("navBar.title")}
               </span> */}
-              <span className="text-secondary font-notosansbold text-center text-xl">
-                {t("navBar.title")}
-              </span>
-            </h1>
-          </Link>
-        </div>
+            <span className="text-secondary font-notosansbold text-center text-xl">
+              {t("navBar.title")}
+            </span>
+          </h1>
+        </Link>
 
         {/* Hamburger Menu Icon */}
         <button

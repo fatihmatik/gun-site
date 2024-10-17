@@ -9,8 +9,9 @@ import { getCurrentLocale } from "@/locales/server";
 import PageWrapper from "./components/PageWrapper";
 
 export const metadata: Metadata = {
-  title: "Oversea Education | overseaeducation.com",
-  description: "Oversea Education Avrupa'da Eğitim için sizlerle beraber.",
+  title: "Oversea Education & Consulting | overseaeducation.com",
+  description:
+    "Oversea Eğitim & Danışmanlık Avrupa'da Eğitim için sizlerle beraber.",
   icons: {
     icon: "/favicon.png",
   },
