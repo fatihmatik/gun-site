@@ -1,29 +1,32 @@
 [
   {
-    "name": "Kağan Ç.",
-    "city": "Bari",
+    "name": "Software Developer",
+    "city": "Sofia",
     "text": {
-      "en": "Thank you for your service and support, I did my university internship in Bari for 1 month because of your work.",
-      "tr": "Hizmetiniz ve desteğiniz için teşekkür ederim, çalışmanız sayesinde üniversite stajımı Bari'de 1 ay yaptım."
+      "en": "Seeking a mid-level Software Developer with experience in React and Node.js to join our team. Must be fluent in English.",
+      "tr": "React ve Node.js deneyimine sahip, ekibimize katılacak orta düzey bir Yazılım Geliştirici arıyoruz. İngilizceyi akıcı konuşması gerekmektedir.",
+      "bg": "Търсим софтуерен разработчик (mid-level) с опит в React и Node.js, който да се присъедини към нашия екип. Задължително е владеенето на английски език."
     },
-    "image": "/images/oversealogowithtext.png"
+    "image": "/images/jobad1.png"
   },
   {
-    "name": "Fatoş S.",
-    "city": "Torino",
+    "name": "Hotel Receptionist",
+    "city": "Burgas",
     "text": {
-      "en": "Thank you for your help throughout the entire process. Oversea helped me with the application process, which was impossible for me. I hope everyone reaches their dreams ❤❤.",
-      "tr": "Tüm süreç boyunca yardımlarınız için teşekkür ederim. Oversea, benim için imkansız olan başvuru sürecinde bana yardımcı oldu. Umarım herkes hayallerine ulaşır ❤❤."
+      "en": "Five-star hotel on the coast is looking for a front desk receptionist. Previous experience in hospitality and excellent communication skills are required.",
+      "tr": "Sahil kenarındaki beş yıldızlı otelimiz için resepsiyonist arıyoruz. Otelcilik sektöründe deneyim ve mükemmel iletişim becerileri gerekmektedir.",
+      "bg": "Петзвезден хотел на крайбрежието търси рецепционист. Предишен опит в сферата на хотелиерството и отлични комуникационни умения са задължителни."
     },
-    "image": "/images/oversealogowithtext.png"
+    "image": "/images/jobad1.png"
   },
   {
-    "name": "Maria P.",
-    "city": "Lecce",
+    "name": "Customer Support Specialist",
+    "city": "Plovdiv",
     "text": {
-      "en": "I want to give thanks to Oversea, thanks to their service I had a 6 months of exchange in South of Italy.",
-      "tr": "Oversea'ya teşekkür etmek istiyorum, hizmetleri sayesinde Güney İtalya'da 6 aylık bir değişim programına katıldım."
+      "en": "We are hiring a Customer Support Specialist. Responsibilities include handling customer inquiries via phone and email. English proficiency is a must.",
+      "tr": "Müşteri Destek Uzmanı arıyoruz. Sorumluluklar arasında telefon ve e-posta yoluyla müşteri taleplerini yönetmek bulunmaktadır. İngilizce yeterliliği zorunludur.",
+      "bg": "Наемаме специалист „Обслужване на клиенти“. Отговорностите включват обработка на клиентски запитвания по телефон и имейл. Владеенето на английски език е задължително."
     },
-    "image": "/images/oversealogowithtext.png"
+    "image": "/images/jobad1.png"
   }
 ]

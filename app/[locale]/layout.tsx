@@ -9,13 +9,13 @@ import { getCurrentLocale } from "@/locales/server";
 import PageWrapper from "./components/PageWrapper";
 
 export const metadata: Metadata = {
-  title: "Oversea Education & Consulting | overseaeducation.com",
-  description:
-    "Oversea Eğitim & Danışmanlık Avrupa'da Eğitim için sizlerle beraber.",
+  title: "Acilim Consulting | acilimdanismanlik.com",
+  description: "Açılım Danışmanlık Avrupa'da iş için sizlerle beraber.",
   icons: {
     icon: "/favicon.png",
   },
   keywords: [
+    // BURAYI DÜZENLERSİN SONRA
     "Avrupa Egitim",
     "Avrupa Staj",
     "Avrupa Calisma",

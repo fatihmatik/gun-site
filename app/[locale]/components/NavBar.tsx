@@ -22,9 +22,6 @@ export default function NavBar() {
         <div className="flex justify-center items-center">
           <Link href="/">
             <h1 className="relative group inline-block">
-              {/* <span className="bg-cyan_to_darkblue text-transparent bg-clip-text font-notosansbold text-center text-xl">
-                  {t("navBar.title")}
-                </span> */}
               <span className="text-secondary font-notosansbold text-center text-xl">
                 {t("navBar.title")}
               </span>

@@ -31,7 +31,9 @@ const SuccessStories = async () => {
               />
             </div>
             <div className="col-start-2 row-start-1 bg-white  pt-2 flex flex-col gap-2 items-center justify-center h-full rounded-t-[40px] text-xl">
-              <p className="text-secondary font-bold">{story.name}</p>
+              <p className="text-secondary font-bold text-lg text-center">
+                {story.name}
+              </p>
               <div className="h-[1px] bg-gray-200 w-1/2"></div>
               <p className="text-primary font-thin ">{story.city}</p>
             </div>

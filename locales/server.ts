@@ -6,6 +6,7 @@ export const { getI18n, getScopedI18n, getStaticParams, getCurrentLocale } =
     {
       en: () => import("./en"),
       tr: () => import("./tr"),
+      bg: () => import("./bg"),
     },
     {
       fallbackLocale: en,

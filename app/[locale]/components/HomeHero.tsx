@@ -72,7 +72,7 @@ const HomeHero = () => {
         {/* right section image content */}
         <div className="absolute lg:static lg:block lg:w-1/2 ml-8 opacity-10 lg:opacity-100 -z-10">
           <img
-            src="/images/oversealogowithtext.png"
+            src="/images/logo-square.jpg"
             alt="Student holding books"
             className="w-full rounded-full"
           />

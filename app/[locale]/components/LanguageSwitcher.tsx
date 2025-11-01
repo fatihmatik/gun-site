@@ -11,7 +11,7 @@ const LanguageSwitcher = () => {
     <div className="flex justify-center items-center space-x-3 ">
       <button onClick={() => changeLocale("en")}>
         <ReactCountryFlag
-          countryCode="US"
+          countryCode="GB"
           svg
           style={{
             fontSize: "2em",
@@ -25,6 +25,19 @@ const LanguageSwitcher = () => {
       <button onClick={() => changeLocale("tr")}>
         <ReactCountryFlag
           countryCode="TR"
+          svg
+          style={{
+            fontSize: "2em",
+            height: 24,
+            width: 32,
+          }}
+          className="rounded-md"
+        />
+      </button>
+      <div className="border border-t-gray-300 h-8" />
+      <button onClick={() => changeLocale("bg")}>
+        <ReactCountryFlag
+          countryCode="BG"
           svg
           style={{
             fontSize: "2em",

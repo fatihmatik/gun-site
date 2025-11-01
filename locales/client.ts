@@ -19,6 +19,10 @@ export const {
       await new Promise((resolve) => setTimeout(resolve, 200));
       return import("./tr");
     },
+    bg: async () => {
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      return import("./bg");
+    },
   },
   {
     fallbackLocale: en,

@@ -6,12 +6,12 @@ export default {
       Span: "Europe",
       Right: "Immediately",
     },
-    leftSectionTextP: "Work Opportunities in Europe",
+    leftSectionTextP: "Internship, Work and Study Opportunities in Europe",
     leftSectionTextLink: "Let's Start!",
     leftSectionLeftH4: "Study in Europe",
     leftSectionLeftP: "EDUCATIONAL OPPORTUNITIES",
-    leftSectionRightH4: "Get a job in Europe",
-    leftSectionRightP: "JOB OPPORTUNITIES",
+    leftSectionRightH4: "Gain experience in Europe",
+    leftSectionRightP: "INTERNSHIP OPPORTUNITIES",
   },
   homeFeatures: {
     topH2Left: "The ",
@@ -19,11 +19,11 @@ export default {
     topH2Right: "Way to Europe",
     column1: {
       h3: "Our Services",
-      p1: "Work in Europe",
-      p2: "Job Opportunities in Europe",
+      p1: "Work or Internship in Europe",
+      p2: "Bachelor's/Master's Degree Opportunities in Europe",
     },
     column2: {
-      h3: "AÇILIM CONSULTING",
+      h3: "OVERSEA EDUCATION AND CONSULTING",
     },
     column3: {
       h3: "Europe is so Close",
@@ -33,7 +33,7 @@ export default {
   homeWhyUs: {
     h1: {
       left: "Why should you prefer",
-      span: "Açılım",
+      span: "Oversea",
       right: " ",
     },
     p: "Let's make your dreams come true together with our professional team to have the best experience without any obstacles or hassles, whether for education or work experience in Europe!",
@@ -45,18 +45,18 @@ export default {
     },
   },
   successStories: {
-    title: "Job Vacancies ",
+    title: "Our Success Stories ",
   },
   navBar: {
-    title: "Açılım Consultancy",
+    title: "Oversea Education & Consultancy",
     whoAreWe: "Who Are We",
     services: "Services",
-    successStories: "Jobs",
+    successStories: "Success Stories",
     contact: "Contact",
     appointment: "Appointment",
   },
   footer: {
-    copyright: "© 2025 Açılım Consulting. All Rights Reserved.",
+    copyright: "© 2024 Oversea Education & Consulting. All Rights Reserved.",
   },
   contactPage: {
     contactUs: "Contact Us",
@@ -82,31 +82,62 @@ export default {
   servicesPage: {
     titleH1: "Our Services",
     titleP:
-      "At Açılım, we provide comprehensive consultancy services to help you achieve your educational and career aspirations in Bulgaria/EU. Explore our services below:",
+      "At Oversea, we provide comprehensive consultancy services to help you achieve your educational and career aspirations in Italy. Explore our services below:",
     service1: {
-      h2: "Finding Jobs",
-      p: "Share your CV with us and we'll find a suitable opening for you!",
+      h2: "Bachelor's/Master's",
+      p: "We offer expert guidance on university applications for undergraduate and master's programs in Italy, ensuring a smooth process from start to finish.",
     },
     service2: {
-      h2: "Citizenship",
-      p: "We give detailed guidance and help for the citizenship prodecures.",
+      h2: "Scholarship Opportunities",
+      p: "We help you identify and apply for scholarships that can make your education in Italy more affordable. Maximize your chances of securing funding.",
     },
     service3: {
-      h2: "Special Needs?",
-      p: "By contacting us we can provide you with the right medium of service!",
+      h2: "Work/Internship Programmes",
+      p: "Our team assists in finding paid internship opportunities in Italy, providing invaluable experience in your field while you study.",
+    },
+    service4: {
+      h2: "Career Guidance",
+      p: "Receive personalized career advice and strategies to enhance your employability in Italy and beyond. We are here to support your professional journey.",
+    },
+    service5: {
+      h2: "Language Support",
+      p: "We provide language support and resources to help you improve your Italian skills, essential for both academic and professional success.",
+    },
+    service6: {
+      h2: "Ongoing Support",
+      p: "Our commitment doesn't end with your placement. We offer ongoing support to ensure your experience in Italy is as rewarding as possible.",
     },
     learnMore: "Learn More",
   },
   aboutUsPage: {
     title: "About Us",
-    paragraph1:
-      "At Açılım Danışmanlık, we are dedicated to guiding individuals, families, and businesses on their journey toward European residency, citizenship, and international living opportunities.",
-    paragraph2:
-      "Headquartered in Turkey, our firm specializes in providing comprehensive consultancy services for those seeking to establish a new life abroad — whether through investment programs, business relocation, education opportunities, or permanent residence solutions.",
+    paragraph1: {
+      left: "At Oversea, we are dedicated to helping you realize your career goals abroad through",
+      span: "undergraduate/master's",
+      right:
+        "education in Italy. Our team of expert consultants is here to support you with visa applications, scholarship opportunities, and paid internship placements.",
+    },
+    paragraph2: "Oversea - Education and Internship Opportunities Abroad",
     paragraph3:
-      "With a team of experienced consultants and legal experts, we deliver tailored, transparent, and reliable advice to ensure a smooth and successful transition to life in Europe. From selecting the right country and program to handling documentation, applications, and post-relocation support, Açılım Danışmanlık accompanies you every step of the way.",
-    paragraph4:
-      "Our mission is to make global mobility accessible, secure, and stress-free, empowering our clients to expand their horizons and build a prosperous future beyond borders.",
+      "Dear Followers, we know that many of you dream of pursuing education in Italy. We also understand your interest in paid internship opportunities in Europe. At Oversea, we take pride in offering reliable and expert consultancy services in these areas. ",
+    paragraph4: {
+      h2: "Italy Visa Services for Undergraduate and Master's Programs",
+      p: "We recognize that visa applications for education in Italy can be a complex process. With our experienced team, we provide guidance on visa applications and assist you in preparing the necessary documents. Just focus on your education; leave the rest to us! 🌟",
+    },
+    paragraph5: {
+      h2: "Paid Internship Opportunities in Europe",
+      p: "Wouldn't you like to advance your career in Europe and experience different cultures? At Oversea, we provide paid internship opportunities in prestigious companies across Europe. Our experts will help identify internship positions that align with your interests and goals, planning the right experience tailored to give you a competitive edge.",
+    },
+    paragraph6: {
+      h2: "Why Trust Oversea Education & Consulting?",
+      li1: "Experienced and expert consultancy team.",
+      li2: "Access to the best opportunities through our extensive network.",
+      li3: "Personalized service approach focused on your needs.",
+      li4: "Success-oriented approach supporting you every step of the way.",
+      li5: "Continuously updated information sources for reliable guidance.",
+    },
+    paragraph7:
+      "At Oversea, we are here to help you realize your dreams. Benefit from our expertise in visa services for undergraduate and master's programs in Italy and paid internship opportunities in Europe. Contact us now, and let's start exploring the education and career opportunities that suit you best!",
   },
   floatingWhatsApp: {
     connectUs: "Connect to us from Whatsapp",
