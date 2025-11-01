@@ -8,8 +8,8 @@ export default {
     },
     leftSectionTextP: "Work Opportunities in Europe",
     leftSectionTextLink: "Let's Start!",
-    leftSectionLeftH4: "Study in Europe",
-    leftSectionLeftP: "EDUCATIONAL OPPORTUNITIES",
+    leftSectionLeftH4: "Get Residency in Europe",
+    leftSectionLeftP: "RESIDENCY OPPORTUNITIES",
     leftSectionRightH4: "Get a job in Europe",
     leftSectionRightP: "JOB OPPORTUNITIES",
   },
@@ -19,8 +19,8 @@ export default {
     topH2Right: "Way to Europe",
     column1: {
       h3: "Our Services",
-      p1: "Work in Europe",
-      p2: "Job Opportunities in Europe",
+      p1: "Job Opportunities in Europe",
+      p2: "Residency in Europe",
     },
     column2: {
       h3: "AÇILIM CONSULTING",

@@ -59,7 +59,7 @@ const HomeWhyUs = async () => {
 
         <div className="absolute bottom-0 left-10 z-10 opacity-0 lg:opacity-100">
           <img
-            src="/images/stockgirl.png"
+            src="/images/whyusboss.png"
             alt="Overlay Image"
             className="h-auto"
           />

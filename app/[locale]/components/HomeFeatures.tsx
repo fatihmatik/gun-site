@@ -79,7 +79,7 @@ const HomeFeatures: React.FC = async () => {
               rel="noopener noreferrer"
               className="text-primary relative group"
             >
-              <span>@oversea.education</span>
+              <span>@acilimconsulting</span>
               <span className="absolute bottom-0 left-1/2 w-0 h-[1px] bg-primary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute bottom-0 right-1/2 w-0 h-[1px] bg-primary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
             </Link>

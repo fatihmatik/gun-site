@@ -28,5 +28,25 @@
       "bg": "Наемаме специалист „Обслужване на клиенти“. Отговорностите включват обработка на клиентски запитвания по телефон и имейл. Владеенето на английски език е задължително."
     },
     "image": "/images/jobad1.png"
+  },
+  {
+    "name": "JOB 4",
+    "city": "Plovdiv",
+    "text": {
+      "en": "We are hiring a Customer Support Specialist. Responsibilities include handling customer inquiries via phone and email. English proficiency is a must.",
+      "tr": "Müşteri Destek Uzmanı arıyoruz. Sorumluluklar arasında telefon ve e-posta yoluyla müşteri taleplerini yönetmek bulunmaktadır. İngilizce yeterliliği zorunludur.",
+      "bg": "Наемаме специалист „Обслужване на клиенти“. Отговорностите включват обработка на клиентски запитвания по телефон и имейл. Владеенето на английски език е задължително."
+    },
+    "image": "/images/jobad1.png"
+  },
+  {
+    "name": "JOB 5",
+    "city": "Plovdiv",
+    "text": {
+      "en": "We are hiring a Customer Support Specialist. Responsibilities include handling customer inquiries via phone and email. English proficiency is a must.",
+      "tr": "Müşteri Destek Uzmanı arıyoruz. Sorumluluklar arasında telefon ve e-posta yoluyla müşteri taleplerini yönetmek bulunmaktadır. İngilizce yeterliliği zorunludur.",
+      "bg": "Наемаме специалист „Обслужване на клиенти“. Отговорностите включват обработка на клиентски запитвания по телефон и имейл. Владеенето на английски език е задължително."
+    },
+    "image": "/images/jobad1.png"
   }
 ]

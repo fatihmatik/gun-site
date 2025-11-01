@@ -48,7 +48,7 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href="/stories" className="relative group inline-block">
+            <Link href="/jobs" className="relative group inline-block">
               {t("navBar.successStories")}
               <span className="absolute -bottom-[1px] left-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
               <span className="absolute -bottom-[1px] right-1/2 w-0 h-[1px] bg-secondary group-hover:w-1/2 group-hover:transition-all duration-300"></span>
